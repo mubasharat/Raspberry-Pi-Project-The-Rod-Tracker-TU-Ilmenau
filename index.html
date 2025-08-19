@@ -1,0 +1,69 @@
+<html>
+  <head>
+    <title>Rod tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='vendor/axios/axios.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+  </head>
+  <body>
+
+
+    <section id="actions">
+      <h2>Actions</h2>
+        <div>
+          <!-- Button to update the system's status -->
+          <button onclick="updateStatus()">Update status</button>
+          <button onclick="requestStartMotor()">Start Motor</button>
+          <button onclick="requestStopMotor()">Stop Motor</button>
+        </div>
+    </div>
+  </section>
+
+  <section id="monitoring_info">
+    <h2>Monitoring information</h2>
+    <!-- HTML elements for 'Motor status' information -->
+    <!-- ... -->
+    <p><b>In order to maually control the motor press C / c for clockwise rotation or press A / a for counter clockwise rotation</b></p>
+    <p><b> Note : Each step is 0.225 degree</b> </p>
+    <table style="width:100%">
+      <tr>
+        <th>TASK # 3 (DISTANCE SENSOR CONTROL)</th>
+        <th>Output / Reading</th>
+      </tr>
+      <tr>
+        <td>Distance</td>
+        <td id="task_2_distance">N/A</td>
+        
+      </tr>
+      <tr>
+        <td>Green</td>
+        <td id="task_2_green">N/A</td>
+      </tr>
+      <tr>
+        <td>Purple</td>
+        <td id="task_2_purple">N/A</td>
+      </tr>
+      <tr>
+        <td>Yellow</td>
+        <td id="task_2_yellow">N/A</td>
+      </tr>
+      <tr>
+        <td>Motor Status</td>
+        <td id="task_3_motor_status">N/A</td>
+      </tr>
+      <tr>
+        <td>Current / Last Rotation</td>
+        <td id="task_3_rotation_status">N/A</td>
+      </tr>
+      <tr>
+        <td>Current / Last Direction</td>
+        <td id="task_3_direction_status">N/A</td>
+      </tr>
+    </table>
+
+    <input type="text" size="1" onkeypress="myFunction(event)">
+
+
+  </section>
+  </body>
+</html>

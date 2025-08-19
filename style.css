@@ -1,0 +1,17 @@
+section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%;
+  }
+
+  table, th, td {
+    border:1px solid black;
+  }
